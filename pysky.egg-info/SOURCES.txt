@@ -1,0 +1,6 @@
+pysky/__init__.py
+pysky.egg-info/PKG-INFO
+pysky.egg-info/SOURCES.txt
+pysky.egg-info/dependency_links.txt
+pysky.egg-info/not-zip-safe
+pysky.egg-info/top_level.txt
