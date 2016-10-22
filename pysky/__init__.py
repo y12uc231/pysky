@@ -2,6 +2,11 @@ import re
 
 
 def refine(str):
+    '''
+
+    :param str: Any tag expression
+    :return: Refined string where multiple spaces are removed
+    '''
     str = re.sub(' +', ' ', str)
     str = re.sub(' += +', '=', str)
     str = re.sub(' +>', '>', str)
@@ -12,6 +17,12 @@ def refine(str):
 
 
 def pyparser(string, query):
+    '''
+    :param string: Source code of tags only
+    :param query:  Queries in the form of Tag1.Tag2.Tag3~attr
+    :return: A list of answer to the queries and -1 for invalid query
+    This function works as a hash function for attribute values of valid tags
+    '''
     # corner cases
     if len(string) == 0:
         return;
