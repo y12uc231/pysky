@@ -8,4 +8,5 @@ setup(name='pysky',
       author_email='satyaprk@andrew.cmu.edu',
       license='MIT',
       packages=['pysky'],
+      install_requires=['re'],
       zip_safe=False)
